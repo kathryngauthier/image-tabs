@@ -66,6 +66,7 @@ img {
 }
 
 @keyframes pulse {
+
   0% {
     opacity: .2;
     transform: scale(.7) rotate(45deg);
@@ -75,6 +76,7 @@ img {
     opacity: 1;
     transform: scale(1) rotate(45deg);
   }
+
 }
 
 .panel {
