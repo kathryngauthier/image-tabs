@@ -31,7 +31,7 @@ html {
   animation: pulse 1s linear infinite alternate;
 }
 
-img{
+img {
 	width: 100%;
 	padding: 0;
 	margin: 0;
@@ -45,12 +45,12 @@ img{
   margin: 0;
 }
 
-.tabs > li{
+.tabs > li {
   display: inline-block;
 
 }
 
-.tabs a{
+.tabs a {
 	line-height: 0;
   display: inline-block;
   color: #000;
@@ -72,16 +72,16 @@ img{
     transform: scale(.7) rotate(45deg);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: scale(1) rotate(45deg);
   }
 }
 
-.panel{
+.panel {
   display: none;
 }
 
-.panel:target{
+.panel:target {
   display: block;
 }
