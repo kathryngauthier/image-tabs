@@ -19,3 +19,69 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.badge {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  top: -5px;
+  left: calc(50% - 5px);
+  transform: rotate(45deg);
+  animation: pulse 1s linear infinite alternate;
+}
+
+img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.tabs {
+  text-align: center;
+  list-style-type: none;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs > li{
+  display: inline-block;
+
+}
+
+.tabs a{
+	line-height: 0;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  border-radius:50px;
+  transition: all 500ms linear;
+  position: relative;
+}
+
+.tabs a:hover {
+  background-color: #000;
+  color: #000;
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity: .2;
+    transform: scale(.7) rotate(45deg);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+  }
+}
+
+.panel{
+  display: none;
+}
+
+.panel:target{
+  display: block;
+}
